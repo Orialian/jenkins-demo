@@ -17,7 +17,7 @@ describe("node接口测试", function () {
             .expect(200)
             .end(function (err, res) {
                 if (err) return done(err);
-                if (res.body.data == "Hello Worlxxxxd!") {
+                if (res.body.data == "Hello Worlds!") {
                     done();
                 } else {
                     done(new Error("接口数据异常"));
